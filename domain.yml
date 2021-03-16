@@ -9,6 +9,18 @@ intents:
   - mood_unhappy
   - bot_challenge
   - tell_name
+  - my_name:
+      use_entities:
+        - name
+  - mobile_number:
+      use_entities:
+        - number  
+
+
+entities:
+  - name
+  - number
+
 
 responses:
   utter_greet:
@@ -32,6 +44,15 @@ responses:
 
   utter_name:
   - text: "My name is PH4N70M"
+
+  utter_my_name:
+  - text: "What is your name?"
+
+  utter_mobile_number:
+  - text: "What is your mobile number?"
+
+  utter_thanks:
+  - text: "Thanks for providing the values."
 
 session_config:
   session_expiration_time: 60

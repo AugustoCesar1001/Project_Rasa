@@ -98,3 +98,20 @@ nlu:
     - what others call you
     - whats should i call you?
 
+- intent: my_name
+  examples: |
+    - my name is [augusto]{"entity":"name","value":"augusto"}
+    - my name is [césar]{"entity":"name","value":"césar"}
+    - my name is [oliveira]{"entity":"name","value":"oliveira"}
+    - [augusto]{"entity":"name","value":"augusto"} is my name
+    - [augusto]{"entity":"name","value":"augusto"} this side
+    - people call me [augusto]{"entity":"name","value":"augusto"}
+
+- intent: mobile_number
+  examples: |
+    - my number is [991526868]{"entity":"number"}
+    - [991526868]{"entity":"number"}
+    - [991526868]{"entity":"number"} is my number
+    - my mobile number is [991526868]{"entity":"number"}
+
+
